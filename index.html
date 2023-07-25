@@ -5,20 +5,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Brust</title>
+    <!-- tailwind daisyui khala -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome -->
     <script src="https://kit.fontawesome.com/e64b8def37.js" crossorigin="anonymous"></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- css -->
+    <style>
+        .lato {
+            font-family: 'Lato', sans-serif;
+        }
+        ::placeholder{
+            font-size: 14px;
+            font-weight: bolder;
+            
+            
+            
+        }
+        ::-ms-input-placeholder{
+            font-size: 14px;
+            font-weight: bold;
+            color: red;
+            
+            
+        }
+    </style>
+
 </head>
 
-<body class="container max-w-screen-xl">
+<body class="container max-w-screen-xl m-auto lato">
     <header>
         <!-- nav start -->
-        <nav>
+        <nav class="container m-auto">
+            <div class="navbar sm:rounded-[30px]  lg:rounded-[600px] bg-white sm:bg-[#F85559] py-3 lg:px-6  grid sm:grid-cols-1  lg:flex md:justify-around">
 
+                <div class="navbar-start hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="font-medium text-white hover:text-white">Home</a></li>
+                        <li><a class="font-medium text-white hover:text-white ">About Us</a></li>
+                        <li><a class="font-medium text-white hover:text-white">Shop</a></li>
+                        <li><a class="font-medium text-white hover:text-white">All Fruits</a></li>
+                    </ul>
+                </div>
+               
+                <div class="navbar-center flex-row-reverse justify-between pb-3 lg:pb-0  lg:m-0">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden  mr-1 sm:text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor ">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 ml-[-80px] z-[1] p-2 shadow bg-white sm:bg-[#F85559] rounded-box w-32">
+                            <li><a class="font-medium sm:text-white ">Home</a></li>
+                        <li><a class="font-medium sm:text-white  ">About Us</a></li>
+                        <li><a class="font-medium sm:text-white">Shop</a></li>
+                        <li><a class="font-medium sm:text-white">All Fruits</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex gap-x-2 justify-center items-center">
+                        <img class="h-12 w-11" src="images/logo.png" alt="">
+                        <h3 class="sm:text-white text-2xl font-bold">Fruit Burst</h3>
+                    </div>
+                </div>
+                <div class="navbar-end flex justify-center items-center m-auto  lg:m-0 lg:justify-end lg:items-end ">
+                   
+                    <input type="text" placeholder="Search here" class=" p-3 rounded-[50px] border-[3px]  border-[#F85559]    text-black  bg-white   min-w-[280px] w-[320px] " />
+                
+                </div>
+            
+            </div>
         </nav>
         <!-- nav end -->
+        <!-- banner start  -->
+        
+        <!-- banner End -->
     </header>
-    
+
     <main>
 
     </main>
