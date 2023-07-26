@@ -19,19 +19,21 @@
         .lato {
             font-family: 'Lato', sans-serif;
         }
-        ::placeholder{
+
+        ::placeholder {
             font-size: 14px;
             font-weight: bolder;
-            
-            
-            
+
+
+
         }
-        ::-ms-input-placeholder{
+
+        ::-ms-input-placeholder {
             font-size: 14px;
             font-weight: bold;
-            color: red;
-            
-            
+
+
+
         }
     </style>
 
@@ -41,7 +43,8 @@
     <header>
         <!-- nav start -->
         <nav class="container m-auto">
-            <div class="navbar sm:rounded-[30px]  lg:rounded-[600px] bg-white sm:bg-[#F85559] py-3 lg:px-6  grid sm:grid-cols-1  lg:flex md:justify-around">
+            <div
+                class="navbar sm:rounded-[30px]  lg:rounded-[600px] bg-white sm:bg-[#F85559] py-3 lg:px-6  grid sm:grid-cols-1  lg:flex md:justify-around">
 
                 <div class="navbar-start hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
@@ -51,7 +54,7 @@
                         <li><a class="font-medium text-white hover:text-white">All Fruits</a></li>
                     </ul>
                 </div>
-               
+
                 <div class="navbar-center flex-row-reverse justify-between pb-3 lg:pb-0  lg:m-0">
                     <div class="dropdown">
                         <label tabindex="0" class="btn btn-ghost lg:hidden  mr-1 sm:text-white">
@@ -64,31 +67,390 @@
                         <ul tabindex="0"
                             class="menu menu-sm dropdown-content mt-3 ml-[-80px] z-[1] p-2 shadow bg-white sm:bg-[#F85559] rounded-box w-32">
                             <li><a class="font-medium sm:text-white ">Home</a></li>
-                        <li><a class="font-medium sm:text-white  ">About Us</a></li>
-                        <li><a class="font-medium sm:text-white">Shop</a></li>
-                        <li><a class="font-medium sm:text-white">All Fruits</a></li>
+                            <li><a class="font-medium sm:text-white  ">About Us</a></li>
+                            <li><a class="font-medium sm:text-white">Shop</a></li>
+                            <li><a class="font-medium sm:text-white">All Fruits</a></li>
                         </ul>
                     </div>
-                    <div class="flex gap-x-2 justify-center items-center">
+                    <div class="flex gap-x-2 justify-center items-center lg:pr-28 xl:pr-52">
                         <img class="h-12 w-11" src="images/logo.png" alt="">
                         <h3 class="sm:text-white text-2xl font-bold">Fruit Burst</h3>
                     </div>
                 </div>
-                <div class="navbar-end flex justify-center items-center m-auto  lg:m-0 lg:justify-end lg:items-end ">
-                   
-                    <input type="text" placeholder="Search here" class=" p-3 rounded-[50px] border-[3px]  border-[#F85559]    text-black  bg-white   min-w-[280px] w-[320px] " />
-                
+                <div class=" flex justify- items-center m-auto  lg:m-0 lg:justify-end lg:items-end ">
+
+                    <input type="text" placeholder="Search here"
+                        class=" p-3 rounded-[50px] border-[3px]  border-[#F85559]    text-black  bg-white w-[230px]   sm:w-[300px] " />
+
                 </div>
-            
+
             </div>
         </nav>
         <!-- nav end -->
         <!-- banner start  -->
-        
-        <!-- banner End -->
-    </header>
+        <section class="container m-auto px-3 sm:px-0">
 
+            <div class="carousel w-full h-[81.7vh] mt-8 rounded-2xl">
+                <!-- slider one -->
+                <div id="slide1"
+                    style="background-image: url('images/banner1.png'); background-repeat: no-repeat;  background-size:cover;  "
+                    class="carousel-item relative w-full ">
+                    <div style="height:100%; width: 100%; background-color: rgba(0, 0, 0, 0.578);" class="flex">
+                        <div class="flex flex-col justify-center items-center gap-y-4 m-auto  ">
+                            <h1 class="text-center text-4xl font-extrabold text-white sm:text-6xl">Exotic tastes at your
+                                <br> doorstep
+                            </h1>
+                            <p class="text-center text-base font-medium text-white">We supply highly quality organic
+                                products</p>
+                            <button
+                                class="btn bg-[#F85559] rounded-lg border-none text-white font-extrabold text-sm hover:bg-[#f00]">Shop
+                                Now</button>
+                        </div>
+                    </div>
+
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- slider two -->
+                <div id="slide2"
+                    style="background-image: url('images/banner2.png'); background-repeat: no-repeat; background-size:cover;  "
+                    class="carousel-item relative w-full">
+
+                    <div style="height:100%; width: 100%; background-color: rgba(0, 0, 0, 0.578);" class="flex">
+                        <div class="flex flex-col justify-center items-center gap-y-4 m-auto  ">
+                            <h1 class="text-center text-4xl font-extrabold text-white sm:text-6xl">Exotic tastes at your
+                                <br> doorstep
+                            </h1>
+                            <p class="text-center text-base font-medium text-white">We supply highly quality organic
+                                products</p>
+                            <button
+                                class="btn bg-[#F85559] rounded-lg border-none text-white font-extrabold text-sm hover:bg-[#f00]">Shop
+                                Now</button>
+                        </div>
+                    </div>
+
+
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- slider three -->
+                <div id="slide3"
+                    style="background-image: url('images/banner3.png'); background-repeat: no-repeat;  background-size:cover;  "
+                    class="carousel-item relative w-full">
+
+                    <div style="height:100%; width: 100%; background-color: rgba(0, 0, 0, 0.578);" class="flex">
+                        <div class="flex flex-col justify-center items-center gap-y-4 m-auto  ">
+                            <h1 class="text-center text-4xl font-extrabold text-white sm:text-6xl">Exotic tastes at your
+                                <br> doorstep
+                            </h1>
+                            <p class="text-center text-base font-medium text-white">We supply highly quality organic
+                                products</p>
+                            <button
+                                class="btn bg-[#F85559] rounded-lg border-none text-white font-extrabold text-sm hover:bg-[#f00]">Shop
+                                Now</button>
+                        </div>
+                    </div>
+
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- slider 4  -->
+                <div id="slide4"
+                    style="background-image: url('images/banner4.png'); background-repeat: no-repeat;  background-size:cover;  "
+                    class="carousel-item relative w-full">
+
+
+                    <div style="height:100%; width: 100%; background-color: rgba(0, 0, 0, 0.578);" class="flex">
+                        <div class="flex flex-col justify-center items-center gap-y-4 m-auto  ">
+                            <h1 class="text-center text-4xl font-extrabold text-white sm:text-6xl">Exotic tastes at your
+                                <br> doorstep
+                            </h1>
+                            <p class="text-center text-base font-medium text-white">We supply highly quality organic
+                                products</p>
+                            <button
+                                class="btn bg-[#F85559] rounded-lg border-none text-white font-extrabold text-sm hover:bg-[#f00]">Shop
+                                Now</button>
+                        </div>
+                    </div>
+
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- banner End -->
+        <!-- banner extra start -->
+        <section class=" hidden sm:block">
+            <div
+                class="grid  justify-around  items-center bg-white gap-5 gap-y-7 mt-[-90px]  drop-shadow-xl w-max m-auto p-10 mb-10 sm:grid-cols-3 lg:grid-cols-5 ">
+                <!-- fruit 1 -->
+                <div class="flex flex-col justify-center items-center">
+                    <img class="h-[100px]" src="images/fruit1.png" alt="">
+                    <p class="text-center text-[#121212cc] text-base font-medium">Grap</p>
+                </div>
+                <!-- fruit 2 -->
+                <div class="flex flex-col justify-center items-center">
+                    <img class="h-[100px]" src="images/fruit2.png" alt="">
+                    <p class="text-center text-[#121212cc] text-base font-medium">Orange</p>
+                </div>
+                <!-- fruit 3 -->
+                <div class="flex flex-col justify-center items-center">
+                    <img class="h-[100px]" src="images/fruit3.png" alt="">
+                    <p class="text-center text-[#121212cc] text-base font-medium">Mango</p>
+                </div>
+                <!-- fruit 4 -->
+                <div class="flex flex-col justify-center items-center">
+                    <img class="h-[100px]" src="images/fruit4.png" alt="">
+                    <p class="text-center text-[#121212cc] text-base font-medium">Strawberry</p>
+                </div>
+                <!-- fruit 5 -->
+                <div class="flex flex-col justify-center items-center ">
+                    <img class="h-[100px]" src="images/fruit5.png" alt="">
+                    <p class="text-center text-[#121212cc] text-base font-medium">Pomergranate</p>
+                </div>
+
+            </div>
+        </section>
+        <!-- banner extra end -->
+    </header>
     <main>
+        <!-- deal time start -->
+        <section class="container m-auto flex flex-col gap-y-7">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-10 px-5 md:px-10 lg:px-20 mt-20">
+                <div class="">
+                    <h1 class=" text-[#121212] text-3xl font-extrabold text-center mb-4 md:text-left">Deal of the day</h1>
+                    <p class="text-[#121212cc] text-sm font-medium max-w-[600px] text-center md:text-left">Contrary to
+                        popular belief, is not simply random
+                        text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000
+                        years old.</p>
+                </div>
+                <div class="">
+                    <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                        <div class="flex flex-col p-2 bg-white text-black rounded-box text-neutral-content">
+                            <span class="countdown font-mono text-3xl sm:text-5xl">
+                                <span style="--value:15;"></span>
+                            </span>
+                            days
+                        </div>
+                        <div class="flex flex-col p-2 bg-white text-black rounded-box text-neutral-content">
+                            <span class="countdown font-mono text-3xl sm:text-5xl">
+                                <span style="--value:10;"></span>
+                            </span>
+                            hours
+                        </div>
+                        <div class="flex flex-col p-2 bg-white text-black rounded-box text-neutral-content">
+                            <span class="countdown font-mono text-3xl sm:text-5xl">
+                                <span style="--value:24;"></span>
+                            </span>
+                            min
+                        </div>
+                        <div class="flex flex-col p-2 bg-white text-black rounded-box text-neutral-content">
+                            <span class="countdown font-mono text-3xl sm:text-5xl">
+                                <span style="--value:35;"></span>
+                            </span>
+                            sec
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-wrap px-4 justify-center gap-x-7 gap-y-7 items-center">
+                <!-- modal one -->
+
+                <div
+                    class="border-[1px] rounded-lg border-[#12121299] py-5 px-14 w-max flex flex-col justify-center items-center gap-2">
+                    <img class="mb-4 h-28" src="images/fruit6.png" alt="">
+                    <h1 class="text-[#121212] text-center text-xl font-bold mb-2">12.90$ - 18.85$</h1>
+                    <hr class="w-[100%] border-[#00000073] mb-2">
+                    <p class="text-[#12121299] text-center text-sm font-medium mb-2">Apples</p>
+
+                    <p class="text-[#f85559] mb-2">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke text-[#f85559]"></i>
+                        <i class="fa-solid fa-star text-[#fa7275bb]"></i>
+                        <i class="fa-solid fa-star text-[#fa7275bb]"></i>
+                        <i class="fa-solid fa-star text-[#fa7275bb]"></i>
+
+                    </p>
+
+                    <button
+                        class="btn bg-transparent border-none text-center text-[#f85559] text-sm font-bold rounded-r-lg hover:bg-[#f85559] hover:text-white"
+                        onclick="my_modal_1.showModal()">Details</button>
+                </div>
+                <dialog id="my_modal_1" class="modal">
+                    <form method="dialog" class="modal-box max-w-max flex flex-col justify-center items-center">
+                        <img class="mb-4" src="images/fruit6.png" alt="">
+                        <h1 class="text-[#121212] text-2xl font-extrabold text-center">Apple</h1>
+                        <p class="text-[#12121299] text-sm font-medium text-center max-w-[320px] p-4">Professional
+                            employees are there for you to pick the most amazing and fresh fruits.</p>
+                        <p class="text-[#f85559] mb-2 text-center">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke text-[#f85559]"></i>
+                            <i class="fa-solid fa-star text-[#fa7275bb]"></i>
+                            <i class="fa-solid fa-star text-[#fa7275bb]"></i>
+                            <i class="fa-solid fa-star text-[#fa7275bb]"></i>
+
+                        </p>
+                        <div class="modal-action">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button
+                                class="btn bg-transparent border-[1px] border-[#f85559] text-center text-[#f85559] text-sm font-bold rounded-r-lg hover:bg-[#f85559] hover:text-white">Close</button>
+                            <button
+                                class="btn bg-[#f85559] text-white  border-[1px] border-[#f85559] text-center  text-sm font-bold rounded-r-lg hover:bg-transparent hover:text-[#f85559] hover:border-[#f85559]">Buy
+                                Now</button>
+                        </div>
+                    </form>
+                </dialog>
+                <!-- modal two -->
+                <div
+                    class="border-[1px] rounded-lg border-[#12121299] py-5 px-14 w-max flex flex-col justify-center items-center gap-2">
+                    <img class="mb-4 h-28" src="images/fruit7.png" alt="">
+                    <h1 class="text-[#121212] text-center text-xl font-bold mb-2">12.90$ - 18.85$</h1>
+                    <hr class="w-[100%] border-[#00000073] mb-2">
+                    <p class="text-[#12121299] text-center text-sm font-medium mb-2">Orange</p>
+
+                    <p class="text-[#f85559] mb-2">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke text-[#f85559]"></i>
+                        <i class="fa-solid fa-star text-[#fa7275bb]"></i>
+                        <i class="fa-solid fa-star text-[#fa7275bb]"></i>
+                        <i class="fa-solid fa-star text-[#fa7275bb]"></i>
+
+                    </p>
+
+                    <button
+                        class="btn bg-transparent border-none text-center text-[#f85559] text-sm font-bold rounded-r-lg hover:bg-[#f85559] hover:text-white"
+                        onclick="my_modal_2.showModal()">Details</button>
+                </div>
+                <dialog id="my_modal_2" class="modal">
+                    <form method="dialog" class="modal-box max-w-max flex flex-col justify-center items-center">
+                        <img class="mb-4" src="images/fruit7.png" alt="">
+                        <h1 class="text-[#121212] text-2xl font-extrabold text-center">Orange</h1>
+                        <p class="text-[#12121299] text-sm font-medium text-center max-w-[320px] p-4">Professional
+                            employees are there for you to pick the most amazing and fresh fruits.</p>
+                        <p class="text-[#f85559] mb-2 text-center">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke text-[#f85559]"></i>
+                            <i class="fa-solid fa-star text-[#fa7275bb]"></i>
+                            <i class="fa-solid fa-star text-[#fa7275bb]"></i>
+                            <i class="fa-solid fa-star text-[#fa7275bb]"></i>
+
+                        </p>
+                        <div class="modal-action">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button
+                                class="btn bg-transparent border-[1px] border-[#f85559] text-center text-[#f85559] text-sm font-bold rounded-r-lg hover:bg-[#f85559] hover:text-white">Close</button>
+                            <button
+                                class="btn bg-[#f85559] text-white  border-[1px] border-[#f85559] text-center  text-sm font-bold rounded-r-lg hover:bg-transparent hover:text-[#f85559] hover:border-[#f85559]">Buy
+                                Now</button>
+                        </div>
+                    </form>
+                </dialog>
+                <!-- modal three -->
+                <div
+                    class="border-[1px] rounded-lg border-[#12121299] py-5 px-14 w-max flex flex-col justify-center items-center gap-2">
+                    <img class="mb-4 h-28" src="images/fruit8.png" alt="">
+                    <h1 class="text-[#121212] text-center text-xl font-bold mb-2">12.90$ - 18.85$</h1>
+                    <hr class="w-[100%] border-[#00000073] mb-2">
+                    <p class="text-[#12121299] text-center text-sm font-medium mb-2">Red Dragon</p>
+
+                    <p class="text-[#f85559] mb-2">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke text-[#f85559]"></i>
+                        <i class="fa-solid fa-star text-[#fa7275bb]"></i>
+                        <i class="fa-solid fa-star text-[#fa7275bb]"></i>
+                        <i class="fa-solid fa-star text-[#fa7275bb]"></i>
+
+                    </p>
+
+                    <button
+                        class="btn bg-transparent border-none text-center text-[#f85559] text-sm font-bold rounded-r-lg hover:bg-[#f85559] hover:text-white"
+                        onclick="my_modal_3.showModal()">Details</button>
+                </div>
+                <dialog id="my_modal_3" class="modal">
+                    <form method="dialog" class="modal-box max-w-max flex flex-col justify-center items-center">
+                        <img class="mb-4" src="images/fruit8.png" alt="">
+                        <h1 class="text-[#121212] text-2xl font-extrabold text-center">Red Dragon</h1>
+                        <p class="text-[#12121299] text-sm font-medium text-center max-w-[320px] p-4">Professional
+                            employees are there for you to pick the most amazing and fresh fruits.</p>
+                        <p class="text-[#f85559] mb-2 text-center">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke text-[#f85559]"></i>
+                            <i class="fa-solid fa-star text-[#fa7275bb]"></i>
+                            <i class="fa-solid fa-star text-[#fa7275bb]"></i>
+                            <i class="fa-solid fa-star text-[#fa7275bb]"></i>
+
+                        </p>
+                        <div class="modal-action">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button
+                                class="btn bg-transparent border-[1px] border-[#f85559] text-center text-[#f85559] text-sm font-bold rounded-r-lg hover:bg-[#f85559] hover:text-white">Close</button>
+                            <button
+                                class="btn bg-[#f85559] text-white  border-[1px] border-[#f85559] text-center  text-sm font-bold rounded-r-lg hover:bg-transparent hover:text-[#f85559] hover:border-[#f85559]">Buy
+                                Now</button>
+                        </div>
+                    </form>
+                </dialog>
+                <!-- modal four -->
+                <div
+                    class="border-[1px] rounded-lg border-[#12121299] py-5 px-14 w-max flex flex-col justify-center items-center gap-2">
+                    <img class="mb-4 h-28" src="images/fruit9.png" alt="">
+                    <h1 class="text-[#121212] text-center text-xl font-bold mb-2">12.90$ - 18.85$</h1>
+                    <hr class="w-[100%] border-[#00000073] mb-2">
+                    <p class="text-[#12121299] text-center text-sm font-medium mb-2">Banana</p>
+
+                    <p class="text-[#f85559] mb-2">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke text-[#f85559]"></i>
+                        <i class="fa-solid fa-star text-[#fa7275bb]"></i>
+                        <i class="fa-solid fa-star text-[#fa7275bb]"></i>
+                        <i class="fa-solid fa-star text-[#fa7275bb]"></i>
+
+                    </p>
+
+                    <button
+                        class="btn bg-transparent border-none text-center text-[#f85559] text-sm font-bold rounded-r-lg hover:bg-[#f85559] hover:text-white"
+                        onclick="my_modal_4.showModal()">Details</button>
+                </div>
+                <dialog id="my_modal_4" class="modal">
+                    <form method="dialog" class="modal-box max-w-max flex flex-col justify-center items-center">
+                        <img class="mb-4" src="images/fruit9.png" alt="">
+                        <h1 class="text-[#121212] text-2xl font-extrabold text-center">Banana</h1>
+                        <p class="text-[#12121299] text-sm font-medium text-center max-w-[320px] p-4">Professional
+                            employees are there for you to pick the most amazing and fresh fruits.</p>
+                        <p class="text-[#f85559] mb-2 text-center">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke text-[#f85559]"></i>
+                            <i class="fa-solid fa-star text-[#fa7275bb]"></i>
+                            <i class="fa-solid fa-star text-[#fa7275bb]"></i>
+                            <i class="fa-solid fa-star text-[#fa7275bb]"></i>
+
+                        </p>
+                        <div class="modal-action">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button
+                                class="btn bg-transparent border-[1px] border-[#f85559] text-center text-[#f85559] text-sm font-bold rounded-r-lg hover:bg-[#f85559] hover:text-white">Close</button>
+                            <button
+                                class="btn bg-[#f85559] text-white  border-[1px] border-[#f85559] text-center  text-sm font-bold rounded-r-lg hover:bg-transparent hover:text-[#f85559] hover:border-[#f85559]">Buy
+                                Now</button>
+                        </div>
+                    </form>
+                </dialog>
+            </div>
+
+            <button
+                class=" w-max m-auto  btn bg-[#f85559] text-white  border-[1px] border-[#f85559] text-center  text-xs py-3 px-6 font-bold rounded-lg hover:bg-transparent hover:text-[#f85559] hover:border-[#f85559]">Shop
+                All</button>
+
+        </section>
+        <!-- deal time end -->
 
     </main>
     <footer>
